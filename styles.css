@@ -28,6 +28,7 @@ h2 {
 .container {
   display: flex;
   max-width: min(90%, 900px);
+  border-radius: 5px;
 }
 
 article {
