@@ -1,8 +1,9 @@
 *,
 *::before,
-*::after {
+*::after,
+button {
   box-sizing: border-box;
-  /* border: 1px solid black; */
+  border: 0;
 }
 
 body {
@@ -14,7 +15,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
   align-items: center;
   color: hsla(0, 0%, 100%, 0.75);
 }
@@ -26,11 +26,7 @@ h2 {
   text-transform: uppercase;
 }
 .container {
-  margin: auto;
   display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
   max-width: min(90%, 900px);
 }
 
@@ -38,27 +34,28 @@ article {
   padding: 2.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   flex: 0 0 300px;
 }
 
 article > p {
   max-width: 90%;
+  color: hsla(0, 0%, 100%, 0.75);
 }
 
 button {
   padding: 1rem 1.8rem;
   border-radius: 2rem;
   width: fit-content;
-  border: 0;
   margin: 5rem auto 2rem 0;
   background-color: hsl(0, 0%, 95%);
   font-family: "Lexend Deca", sans-serif;
+  transition: background 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 footer {
+  color: rgb(99, 96, 96);
   margin-top: 3rem;
-  border: 1px solid red;
   width: max-content;
   text-align: center;
 }
@@ -98,7 +95,6 @@ footer {
   .container {
     flex-direction: column;
     align-self: center;
-
     max-width: 375px;
   }
 }
