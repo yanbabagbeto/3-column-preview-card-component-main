@@ -28,7 +28,6 @@ h2 {
 .container {
   display: flex;
   max-width: min(90%, 900px);
-  border-radius: 5px;
 }
 
 article {
@@ -67,9 +66,16 @@ footer {
   color: hsl(0, 0%, 95%);
   outline: 2px solid hsl(0, 0%, 95%);
 }
+
 .one,
 .one > button:hover {
   background-color: hsl(31, 77%, 52%);
+}
+
+.one {
+  border-top-right-radius: unset;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 .one > button {
   color: hsl(31, 77%, 52%);
@@ -88,6 +94,11 @@ footer {
   background-color: hsl(179, 100%, 13%);
 }
 
+.three {
+  border-bottom-left-radius: unset;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
 .three > button {
   color: hsl(179, 100%, 13%);
 }
@@ -97,5 +108,18 @@ footer {
     flex-direction: column;
     align-self: center;
     max-width: 375px;
+  }
+
+  .one {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: unset;
+    border-top-right-radius: 8px;
+  }
+
+  .three {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    border-top-right-radius: unset;
   }
 }
